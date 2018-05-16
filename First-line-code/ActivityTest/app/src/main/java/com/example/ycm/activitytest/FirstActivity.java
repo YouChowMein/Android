@@ -34,6 +34,11 @@ public class FirstActivity extends AppCompatActivity {
     }
 
     @Override
+    protected void onRestart(){
+        super.onRestart();
+        Log.d("FirstActivity", "onRestart");
+    }
+    @Override
     public boolean onOptionsItemSelected(MenuItem item)
     {
         switch (item.getItemId()) {
@@ -50,6 +55,7 @@ public class FirstActivity extends AppCompatActivity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        Log.d("FirstActivity", "Task id is"+getTaskId());
         setContentView(R.layout.first_layout);
         Button button1=(Button)findViewById(R.id.button_1);
         button1.setOnClickListener(new View.OnClickListener(){
