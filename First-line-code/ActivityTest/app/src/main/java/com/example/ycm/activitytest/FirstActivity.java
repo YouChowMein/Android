@@ -11,7 +11,7 @@ import android.view.MenuItem;
 import android.widget.Toast;
 import android.widget.Button;
 import android.view.View;
-public class FirstActivity extends AppCompatActivity {
+public class FirstActivity extends BaseActivity {
 
 
     @Override
@@ -58,7 +58,13 @@ public class FirstActivity extends AppCompatActivity {
         Log.d("FirstActivity", "Task id is"+getTaskId());
         setContentView(R.layout.first_layout);
         Button button1=(Button)findViewById(R.id.button_1);
-        button1.setOnClickListener(new View.OnClickListener(){
+        button1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                SecondActivity.actionStart(FirstActivity.this,"data1","data2");
+            }
+        });
+       /* button1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
                 //Toast.makeText(FirstActivity.this, "You clicked Button 1", Toast.LENGTH_SHORT).show();
@@ -75,8 +81,10 @@ public class FirstActivity extends AppCompatActivity {
                 //intent.putExtra("extra_data",data);
                 //startActivity(intent);
                 Intent intent=new Intent(FirstActivity.this,SecondActivity.class);
+                intent.putExtra("param1","data1");
+                intent.putExtra("param2","data2");
                 startActivityForResult(intent,1);
             }
-            });
+            }); */
         }
     }
