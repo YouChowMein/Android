@@ -1,5 +1,8 @@
 package com.example.ycm.uiwidgettest;
 
+import android.app.ProgressDialog;
+import android.content.DialogInterface;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -41,9 +44,33 @@ import android.widget.Toast;
     public void onClick(View v){
         switch(v.getId()){
             case R.id.button:
-                int progress=progressBar.getProgress();
+                ProgressDialog progressDialog=new ProgressDialog(MainActivity.this);
+                progressDialog.setTitle("This is ProgressDialog");
+                progressDialog.setMessage("Loading...");
+                progressDialog.setCancelable(true);
+                progressDialog.show();
+
+                /*AlertDialog.Builder dialog=new AlertDialog.Builder(MainActivity.this);
+                dialog.setTitle("This is Dialog");
+                dialog.setMessage("Something important.");
+                dialog.setCancelable(false);
+                dialog.setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                            }
+                        });
+                dialog.setNegativeButton("Cancel",new DialogInterface.OnClickListener(){
+                    @Override
+                    public void onClick(DialogInterface dialog,int which){
+
+                    }
+                });
+                dialog.show();
+*/
+
+               /* int progress=progressBar.getProgress();
                 progress=progress+10;
-                progressBar.setProgress(progress);
+                progressBar.setProgress(progress); */
                 /*if(progressBar.getVisibility()==View.GONE){
                     progressBar.setVisibility(View.VISIBLE);
                 }else{
