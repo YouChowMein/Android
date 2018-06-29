@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://D:\git\Android\JsHeadline-master\Headline.iml" filepath="D:\git\Android\JsHeadline-master\Headline.iml" />
+      <module fileurl="file://$PROJECT_DIR$/JsHeadline-master.iml" filepath="$PROJECT_DIR$/JsHeadline-master.iml" />
+      <module fileurl="file://D:\git\Android\JsHeadline-master\app\app.iml" filepath="D:\git\Android\JsHeadline-master\app\app.iml" />
+      <module fileurl="file://D:\git\Android\JsHeadline-master\base\base.iml" filepath="D:\git\Android\JsHeadline-master\base\base.iml" />
+      <module fileurl="file://D:\git\Android\JsHeadline-master\lib_net\lib_net.iml" filepath="D:\git\Android\JsHeadline-master\lib_net\lib_net.iml" />
+      <module fileurl="file://D:\git\Android\JsHeadline-master\lib_ui\lib_ui.iml" filepath="D:\git\Android\JsHeadline-master\lib_ui\lib_ui.iml" />
+      <module fileurl="file://D:\git\Android\JsHeadline-master\lib_utils\lib_utils.iml" filepath="D:\git\Android\JsHeadline-master\lib_utils\lib_utils.iml" />
+      <module fileurl="file://D:\git\Android\JsHeadline-master\module_news\module_news.iml" filepath="D:\git\Android\JsHeadline-master\module_news\module_news.iml" />
+      <module fileurl="file://D:\git\Android\JsHeadline-master\module_picture\module_picture.iml" filepath="D:\git\Android\JsHeadline-master\module_picture\module_picture.iml" />
+      <module fileurl="file://D:\git\Android\JsHeadline-master\module_video\module_video.iml" filepath="D:\git\Android\JsHeadline-master\module_video\module_video.iml" />
+    </modules>
+  </component>
+</project>
