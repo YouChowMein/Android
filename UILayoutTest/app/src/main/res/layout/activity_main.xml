@@ -116,42 +116,45 @@
         android:src="@mipmap/ic_launcher"/>
 </FrameLayout>
 -->
-<android.support.percent.PercentRelativeLayout
+<!--百分比布局
+<android.support.percent.PercentFrameLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/activity_main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context="com.example.administrator.singleinstance.MainActivity">
+    android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/left"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_alignParentTop="true"
-        android:background="@color/colorPrimaryDark"
-        app:layout_heightPercent="30%"
-        app:layout_widthPercent="70%"
-        />
-    <TextView
-        android:layout_toRightOf="@+id/left"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:layout_alignParentTop="true"
-        android:background="@color/colorAccent"
-        app:layout_heightPercent="30%"
-        app:layout_widthPercent="30%"
-        />
-    <TextView
-        android:layout_below="@+id/left"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        android:background="#000"
-        app:layout_marginTopPercent="30%"
-        app:layout_marginLeftPercent="25%"
-        app:layout_heightPercent="70%"
+    <Button
+        android:id="@+id/button1"
+        android:text="Button 1"
+        android:layout_gravity="left|top"
         app:layout_widthPercent="50%"
+        app:layout_heightPercent="50%"
         />
 
-</android.support.percent.PercentRelativeLayout>
+    <Button
+        android:id="@+id/button2"
+        android:text="Button 2"
+        android:layout_gravity="right|top"
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="50%"
+        />
+
+    <Button
+        android:id="@+id/button3"
+        android:text="Button 3"
+        android:layout_gravity="left|bottom"
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="50%"
+        />
+
+    <Button
+        android:id="@+id/button4"
+        android:text="Button 4"
+        android:layout_gravity="right|bottom"
+        app:layout_widthPercent="50%"
+        app:layout_heightPercent="50%"
+        />
+
+</android.support.percent.PercentFrameLayout>
+-->
