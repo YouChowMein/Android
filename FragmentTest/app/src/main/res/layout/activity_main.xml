@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:andriod="http://schemas.android.com/apk/res/android"
+    andriod:orientation="horizontal"
+    andriod:layout_width="match_parent"
+    andriod:layout_height="match_parent"
+    >
+
+    <fragment
+        andriod:id="@+id/left_fragment"
+        andriod:name="com.example.ycm.fragmenttest.LeftFragment"
+        andriod:layout_width="match_parent"
+
+        andriod:layout_height="match_parent"/>
+
+        <!--andriod:layout_weight="1"/>--><!--andriod:layout_width="0dp"-->
+
+    <!--<fragment
+        andriod:id="@+id/right_fragment"
+        andriod:name="com.example.ycm.fragmenttest.RightFragment"
+        andriod:layout_width="0dp"
+        andriod:layout_height="match_parent"
+        andriod:layout_weight="1"/>-->
+
+    <!--<FrameLayout
+        andriod:id="@+id/right_layout"
+        andriod:layout_width="0dp"
+        andriod:layout_height="match_parent"
+        andriod:layout_weight="1">
+
+    </FrameLayout>-->
+</LinearLayout>
+
