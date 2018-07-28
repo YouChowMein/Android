@@ -1,5 +1,0 @@
-P133 不用这么麻烦而且在Android sdk tools中也找不到draw9patch.bat文件，直接在要创建Nine-Patch图片的图片右键即可。
-
-标准广播和有序广播代码是不是有问题啊。。。
-
-P200 在Android Device Monitor生成不了data文件。。。
