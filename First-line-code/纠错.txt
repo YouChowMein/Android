@@ -8,3 +8,16 @@ P313
 不能写<uses-permission android:name="android.permission.INTERNET"/>
 而是<uses-permission android:name="android.permission.INTERNET"></uses-permission>
 不然打开网页后马上出现Webpage not available
+
+P376
+正确<service
+            android:name=".DownloadService"
+            android:enabled="true"
+            android:exported="true"/>
+而不是</service>
+好吧是忘写publishProgress(progress);导致没出现进度条
+
+P384网址错误显示乱码
+真正网址:http://lbsyun.baidu.com/index.php?title=sdk/download&action#selected=location_all
+
+P386 顶部工具栏→tools→Android→sync.....

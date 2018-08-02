@@ -20,7 +20,7 @@ public class DownloadService extends Service {
     private DownloadListener listener=new DownloadListener() {
         @Override
         public void onProgress(int progress) {
-            getNotificationMannager().notify(1,getNotification("Downloading...",progress));
+            getNotificationManager().notify(1,getNotification("Downloading...",progress));
         }
 
         @Override
@@ -56,9 +56,6 @@ public class DownloadService extends Service {
     };
 
     private DownloadBinder mBinder=new DownloadBinder();
-
-    public DownloadService() {
-    }
 
     @Override
     public IBinder onBind(Intent intent) {
@@ -116,7 +113,7 @@ public class DownloadService extends Service {
         builder.setLargeIcon(BitmapFactory.decodeResource(getResources(), R.mipmap.ic_launcher));
         builder.setContentIntent(pi);
         builder.setContentTitle(title);
-        if(progress>0){
+        if(progress>=0){
             //当progress大于或等于0时才需显示下载进度
             builder.setContentText(progress+"%");
             builder.setProgress(100,progress,false);
