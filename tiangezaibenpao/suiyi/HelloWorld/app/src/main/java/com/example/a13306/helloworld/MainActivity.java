@@ -6,9 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.GridView;
 import android.widget.RadioButton;
 
-import com.example.a13306.helloworld.listview.ListViewActivity;
+import com.example.a13306.helloworld.listview.*;
+import com.example.a13306.helloworld.gridview.*;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -20,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
     private Button mBtnCheckBox;
     private Button mBtnImageView;
     private Button mBtnListView;
+    private Button mBtnGridView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -61,6 +64,7 @@ public class MainActivity extends AppCompatActivity {
 
         mBtnImageView = findViewById(R.id.btn_imageview);
         mBtnListView = findViewById(R.id.btn_listview);
+        mBtnGridView=findViewById(R.id.btn_gridview);
         setListeners();
     }
 
@@ -73,6 +77,7 @@ public class MainActivity extends AppCompatActivity {
         mBtnCheckBox.setOnClickListener(onClick);
         mBtnImageView.setOnClickListener(onClick);
         mBtnListView.setOnClickListener(onClick);
+        mBtnGridView.setOnClickListener(onClick);
     }
 
     private class OnClick implements View.OnClickListener {
@@ -107,6 +112,10 @@ public class MainActivity extends AppCompatActivity {
                 case R.id.btn_listview:
                     //跳转到ListView演示页面
                     intent = new Intent(MainActivity.this, ListViewActivity.class);
+                    break;
+                case R.id.btn_gridview:
+                    //跳转到GridView演示页面
+                    intent = new Intent(MainActivity.this, GridViewActivity.class);
                     break;
             }
             startActivity(intent);

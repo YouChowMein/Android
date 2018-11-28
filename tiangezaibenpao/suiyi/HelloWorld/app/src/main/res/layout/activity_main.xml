@@ -107,12 +107,87 @@
     <!--</LinearLayout>-->
 <!--</RelativeLayout>-->
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+    <!--xmlns:tools="http://schemas.android.com/tools"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--&gt;-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_textview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="TextView"-->
+        <!--android:textAllCaps="false"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_button"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="BUTTON"-->
+        <!--android:textAllCaps="false"/>-->
+    <!---->
+    <!--<Button-->
+        <!--android:id="@+id/btn_edittext"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="EditText"-->
+        <!--android:textAllCaps="false"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_radiobutton"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="RadioButton"-->
+        <!--android:textAllCaps="false"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_checkbox"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="CheckBox"-->
+        <!--android:textAllCaps="false"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_imageview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="ImageView"-->
+        <!--android:textAllCaps="false"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_listview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="ListView"-->
+        <!--android:textAllCaps="false"/>-->
+
+    <!--<Button-->
+        <!--android:id="@+id/btn_gridview"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="GridView"-->
+        <!--android:textAllCaps="false"/>-->
+
+    <!--<Button-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="test"-->
+        <!--android:textAllCaps="false"-->
+        <!--android:layout_marginTop="300dp"/>-->
+
+<!--</LinearLayout>-->
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
     >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
     <Button
         android:id="@+id/btn_textview"
@@ -127,7 +202,7 @@
         android:layout_height="wrap_content"
         android:text="BUTTON"
         android:textAllCaps="false"/>
-    
+
     <Button
         android:id="@+id/btn_edittext"
         android:layout_width="match_parent"
@@ -163,4 +238,43 @@
         android:text="ListView"
         android:textAllCaps="false"/>
 
-</LinearLayout>
+    <Button
+        android:id="@+id/btn_gridview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GridView"
+        android:textAllCaps="false"/>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:text="Test"
+                android:textAllCaps="false"/>
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:text="Test"
+                android:textAllCaps="false"/>
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:text="Test"
+                android:textAllCaps="false"/>
+            <Button
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:text="Test"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    </LinearLayout>
+</ScrollView>
